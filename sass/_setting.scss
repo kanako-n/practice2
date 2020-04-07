@@ -1,0 +1,28 @@
+@charset "UTF-8";
+//==============================================
+//サイトの基本設定
+//==============================================
+
+//フォントサイズ----------------------------------
+$big-heading: 30px;
+$heading: 28px;
+$sub-heading: 20px;
+$basesize: 16px;
+$minimumsize: 12px;
+
+//色--------------------------------------------
+$color-main: #F3F3F3;
+$color-sub: #3E3E3E;
+$yellow: #FFAA3B;
+$blue: #3B69FF;
+$red: #FF4646;
+
+//ブレイクポイント---------------------------------
+$breakpoints: (
+    xs: "screen and (max-width:320px)",
+    s: "screen and (max-width:575px)",
+    m: "screen and (max-width:767px)",
+    l: "screen and (max-width:991px)",
+    xl: "screen and (max-width:1199px)",
+);
+
