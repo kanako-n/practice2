@@ -1,13 +1,31 @@
+
 //ボタン------------------------------------------
 .btn {
     display: inline-block;
+    padding: 20px 86px;
+    font-size: 20px;
+    font-weight: 600;
 }
 //汎用ボタン
-.btn--white {
-    @extend .btn;
+.btn--bright {
+    color: $subcolor;
+    background-color: #fff;
+    border: 1px solid #707070;
+    &:hover {
+        color: #fff;
+        background-color: $subcolor;
+        border: 1px solid #FFFFFF;
+    }
 }
-.btn--black {
-    @extend .btn;
+.btn--bark {
+    color: #fff;
+    background-color: $subcolor;
+    border: 1px solid #FFFFFF;
+    &:hover {
+        color: $subcolor;
+        background-color: #fff;
+        border: 1px solid #707070;
+    }
 }
 //コンバージョンボタン
 .CV-btn {

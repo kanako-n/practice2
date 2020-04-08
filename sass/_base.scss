@@ -1,19 +1,23 @@
 //全体-------------------------------------------------
 body {
-    color: $color-sub;									
+    color: $subcolor;									
     font-family: '游ゴシック', 'Montserrat', sans-serif;
-    background-color: $color-main;
+    // フォント
+    // 'Montserrat'
+    // Regular 400, Medium 500, Semi-bold 600
+    background-color: $maincolor;
     line-height: 1.5;
     font-size: $basesize;
 }
 //リンク-------------------------------------------------
 a {
     text-decoration: none;
-    color: $color-sub;
+    color: $subcolor;
 }
 //イメージ------------------------------------------------
 img {
     max-width: 100%;  //フルーイドイメージ
     height: auto;     //親要素に合わせて自動で拡大縮小
 }
+
 
