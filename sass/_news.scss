@@ -1,0 +1,9 @@
+.news {
+    background-color: $color-main;
+
+    &__inner {
+        width: 1180px + 30;
+        padding: 0 15px;
+        margin: 130px auto;
+    }
+}
