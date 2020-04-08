@@ -1,29 +1,19 @@
+//全体-------------------------------------------------
 body {
     color: $color-sub;									
-    font-family: "Helvetica Neue",   /*使いたいフォントがあれば変更*/
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif;
-        background-color: $color-main;
-        line-height: 1.5;
+    font-family: '游ゴシック', 'Montserrat', sans-serif;
+    background-color: $color-main;
+    line-height: 1.5;
+    font-size: $basesize;
 }
+//リンク-------------------------------------------------
 a {
-text-decoration: none;
-color: $color-sub;
+    text-decoration: none;
+    color: $color-sub;
 }
-a:hover {
-opacity: 0.7;
-}
+//イメージ------------------------------------------------
 img {
     max-width: 100%;  //フルーイドイメージ
     height: auto;     //親要素に合わせて自動で拡大縮小
 }
-.container {
-    max-width: 1180px + 30;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+
