@@ -1,0 +1,39 @@
+.results {
+    background-color: $subcolor;
+    margin-top: 255px;
+    margin-left: 93px;
+
+    &__title {
+        @include title(#fff);
+        margin-left: 110px;
+    }
+    .btn {
+        margin-left: 110px;
+        margin-bottom: 80px;
+    }
+}
+
+.card {
+    background-color: #fff;
+    width: 422px;
+    &__img-wrapper {
+        position: relative;
+        padding-top: 234 / 422 * 100%; //縦横比率（422:234)
+        overflow: hidden;
+    }
+    &__img {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+    }
+    &__title {
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__text {
+        padding-bottom: 20px;
+    }
+}
