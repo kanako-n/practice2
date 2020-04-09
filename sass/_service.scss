@@ -2,7 +2,7 @@
     background-color: $subcolor;
     text-align: center;
     height: 400px;
-    h2 {
+    &__title {
         @include title(#ffffff);
     } 
 
