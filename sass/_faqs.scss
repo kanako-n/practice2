@@ -1,0 +1,47 @@
+.faqs {
+    background-image: url(../img/sunyu-kim-1053375-unsplash.png);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    padding-bottom: 40px;
+    &__title {
+        @include title();
+    }
+}
+
+.faq-accordion {
+    margin: 0 109px 40px auto;
+    width: 616px;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 7px;
+    padding: 18px;
+    &__title {
+        font-weight: bold;
+        position: relative;
+        padding-left: 13px + 26;
+        line-height: 26px;
+        text-align: left;
+    } 
+    &__btn {
+        cursor: pointer;
+        outline: 0;
+        background-color: #fff;
+    }
+    &__icon {
+        color: #fff;
+        background-color: $blue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+    }
+    &__body {
+        border-radius: 7px;
+        background-color: #3B69FF33;
+    }
+  }
