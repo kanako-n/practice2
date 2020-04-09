@@ -1,0 +1,27 @@
+.coments-wrapper {
+    display: flex;
+    justify-content: center;
+    &__img {
+        width: 537px;
+        height: 450px;
+        margin-top: 126px;
+    }
+}
+.coments {
+    background-color: #ffffff;
+    max-width: 644px;
+    padding: 0 40px 40px;
+    box-shadow: 0px 0px 10px #00000029;
+    &__title {
+        @include title();
+        margin-left: 40px;
+    }
+}
+.coment {
+    display: flex;
+    padding-bottom: 80px;
+
+    &__text {
+        padding-left: 50px;
+    }
+}
