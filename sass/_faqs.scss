@@ -17,17 +17,44 @@
     text-align: left;
     border-radius: 7px;
     padding: 18px;
-    &__title {
+
+    &__question {
+        display: block;
+        width: 100%;
         font-weight: bold;
+        color: $subcolor;
         position: relative;
         padding-left: 13px + 26;
         line-height: 26px;
-        text-align: left;
-    } 
-    &__btn {
         cursor: pointer;
         outline: 0;
         background-color: #fff;
+        text-align: left;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            display: block;
+            width: 15px;
+            height: 3px;
+            background-color: $blue;
+            transform: translateY(-50%);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 7.5px;
+            display: block;
+            width: 3px;
+            height: 15px;
+            background-color: $blue;
+            transform: translateY(-50%);
+        }
+        &.active::after {
+            content: none;
+        }
     }
     &__icon {
         color: #fff;
@@ -39,9 +66,14 @@
         transform: translateY(-50%);
         width: 26px;
         height: 26px;
+        text-align: center;
     }
-    &__body {
+    &__answer {
+        display: none;
         border-radius: 7px;
         background-color: #3B69FF33;
+        margin-top: 21px;
+        padding: 18px 14px;
     }
   }
+

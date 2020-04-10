@@ -21,24 +21,32 @@ new Swiper( '.swiper-container', {
 
 /* FAQのアコーディオン
   ------------------------------------------------*/
-//クリックしたときに答えの表示中はopenをつけ、非表示中は外す
-$('.faq-list__item').click(function() {
-  var $answer = $(this).find('.answer');
-  if($answer.hasClass('open')) { 
-    $answer.removeClass('open');
-    // slideUpメソッドを用いて、$answerを隠す
-    $answer.slideUp();
+//questionをクリックしたときに答えの表示中は--activeをつけ、非表示中は外す
+$(function(){
+  // $('.faq-accordion__question').click(function() {
+  //   var $answer = $(this).find('.faq-according__answer');
+  //   if($answer.hasClass('open')) { 
+  //     $answer.removeClass('open');
+  //     // slideUpメソッドを用いて、$answerを隠す
+  //     $answer.slideUp();
+  //   } else {
+  //     $answer.addClass('open'); 
+  //     // slideDownメソッドを用いて、$answerを表示
+  //     $answer.slideDown();
+  //   }
+  // });
 
-    // 子要素のspanタグの中身をtextメソッドを用いて書き換える
-    $(this).find('span').text('+');
-    
-  } else {
-    $answer.addClass('open'); 
-    // slideDownメソッドを用いて、$answerを表示
-    $answer.slideDown();
-    
-    // 子要素のspanタグの中身をtextメソッドを用いて書き換える
-    $(this).find('span').text('-');
-    
-  }
+
+  $( '.faq-accordion__question' ).on( 'click', function() {
+    var $answer = $(this).find('.faq-according__answer');
+    $( this ).toggleClass( 'active' );
+    if($answer.hasClass('active')) { 
+      // slideUpメソッドを用いて、$answerを隠す
+      $answer.slideUp();
+    } else {
+      // $answer.addClass('active'); 
+      // slideDownメソッドを用いて、$answerを表示
+      $answer.slideDown();
+    }
+  });
 });
