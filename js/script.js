@@ -37,16 +37,17 @@ $(function(){
   // });
 
 
-  $( '.faq-accordion__question' ).on( 'click', function() {
-    var $answer = $(this).find('.faq-according__answer');
+  $( '.js-faq__Q' ).on( 'click', function() {
+    // var $answer = $(this).find('.js-faq__A');
+    $( this ) .next('.js-faq__A').slideToggle();
     $( this ).toggleClass( 'active' );
-    if($answer.hasClass('active')) { 
-      // slideUpメソッドを用いて、$answerを隠す
-      $answer.slideUp();
-    } else {
-      // $answer.addClass('active'); 
-      // slideDownメソッドを用いて、$answerを表示
-      $answer.slideDown();
-    }
+    // if($answer.hasClass('active')) { 
+    //   // slideUpメソッドを用いて、$answerを隠す
+    //   $answer.slideUp();
+    // } else {
+    //   // $answer.addClass('active'); 
+    //   // slideDownメソッドを用いて、$answerを表示
+    //   $answer.slideDown();
+    // }
   });
 });
