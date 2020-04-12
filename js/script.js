@@ -21,33 +21,27 @@ new Swiper( '.swiper-container', {
 
 /* FAQのアコーディオン
   ------------------------------------------------*/
-//questionをクリックしたときに答えの表示中は--activeをつけ、非表示中は外す
 $(function(){
-  // $('.faq-accordion__question').click(function() {
-  //   var $answer = $(this).find('.faq-according__answer');
-  //   if($answer.hasClass('open')) { 
-  //     $answer.removeClass('open');
-  //     // slideUpメソッドを用いて、$answerを隠す
-  //     $answer.slideUp();
-  //   } else {
-  //     $answer.addClass('open'); 
-  //     // slideDownメソッドを用いて、$answerを表示
-  //     $answer.slideDown();
-  //   }
-  // });
-
-
   $( '.js-faq__Q' ).on( 'click', function() {
-    // var $answer = $(this).find('.js-faq__A');
     $( this ) .next('.js-faq__A').slideToggle();
     $( this ).toggleClass( 'active' );
-    // if($answer.hasClass('active')) { 
-    //   // slideUpメソッドを用いて、$answerを隠す
-    //   $answer.slideUp();
-    // } else {
-    //   // $answer.addClass('active'); 
-    //   // slideDownメソッドを用いて、$answerを表示
-    //   $answer.slideDown();
-    // }
+
   });
 });
+
+/* フローティング
+  -------------------------------------------------*/
+  jQuery(window).on("scroll", function($) {
+    if (jQuery(this).scrollTop() > 100) {
+      jQuery('.floating').show();
+    } else {
+      jQuery('.floating').hide();
+    }
+  });
+  
+  jQuery('.floating').click(function () {
+    jQuery('body,html').animate({
+      scrollTop: 0
+    }, 500);
+    return false;
+  });
