@@ -1,0 +1,33 @@
+.access {
+    position: relative;
+    &::before {
+        content: "";
+        background-color: $subcolor;
+        position: absolute;
+        left: 0;
+        bottom: 206px;
+        width: 980px;
+        height: 2230px;
+        z-index: -1;
+    }
+    &__inner {
+        width: 1180/1366*100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        @include title(#ffffff);
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    &__address {
+        color: #ffffff;
+        padding-bottom: 40px;
+        width: 326px;
+    }
+    &__map {
+        margin: 130px 0;
+        box-shadow: 0px 0px 10px #3E3E3E33;
+    }
+}

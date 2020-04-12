@@ -1,0 +1,178 @@
+.contact {
+    background-image: url(../img/alex-blajan-159378-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    padding-bottom: 80.5px;
+    &__box {
+        max-width: 960/1366*100%;
+        margin: 0 auto;
+    }
+}
+
+.contact-header {
+    background-image: url(../img/contact1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 61.5px 0;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px 12px 0px 0px;
+    &__title {
+        @include title(#ffffff);
+        margin-bottom: 12px;
+    }
+    &__text {
+        color: #ffffff;
+    }
+}
+.contact-content {
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.contact-form {
+    max-width: 780/960*100%;
+    margin: 0 auto;
+}
+.contact-item {
+    margin-bottom: 40px;
+    content:"";
+    display: block;
+    clear: both;
+    &__title {
+        width: 195px;
+        position: relative;
+        margin-right: 80px;
+        float: left;
+    }
+    &__must {
+        background-color: $red;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 2px 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    &--message {
+        margin-bottom: 30px;
+    }
+    &__gender {
+        display: flex;
+    }
+    input[type="text"],
+    input[type="email"] {
+        border: none;
+        border-bottom: 1px solid $subcolor;
+        font-size: 22px;
+        cursor: pointer;
+        outline: 0;
+        padding-left: 10px;
+        box-sizing: border-box;
+        width: 100%;
+	    max-width: 505px;
+        &:hover, &:focus {
+            border-bottom: 1px solid $blue;
+        }
+    }
+}
+.select {
+    display: flex;
+}
+.contact-item__select-box {
+    position: relative;
+    width: 261px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    &::before {
+        position: absolute;
+        content: '';
+        top: 10px;
+        right: 10px;
+        width: 7px;
+        height: 7px;
+        border-left: 2px solid $subcolor;
+        border-bottom: 2px solid $subcolor;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+}
+
+select::-ms-expand {
+	display: none;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-size: 18px;
+    color: $subcolor;
+    border: none;
+    content:"";
+    display: block;
+    clear: both;
+
+}
+
+.contact-list {
+    font-size: 22px;
+}
+.contact-radio {
+    padding-right: 60px;
+}
+textarea {
+    outline: 0;
+    width: 100%;
+    height: 213px; 
+    border: 1px solid $subcolor;
+    margin-top: 10px;  
+    &:hover, &:focus {
+        border-color: $blue;
+        box-shadow: 0 0 7px ＄blue;
+    }
+}
+
+.contact-privacy {
+    margin-bottom: 30px;
+    
+    &__label {
+        cursor: pointer;
+        padding-left: 41px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            border: 1px solid $subcolor;
+          }
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:checked  + &__label::after {
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 3px;
+        width: 13px;
+        height: 7px;
+        border-left: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+}
