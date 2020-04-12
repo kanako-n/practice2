@@ -10,8 +10,6 @@
 @mixin title ($color: $subcolor) {
     display: inline-block;
     font-size: $title-heading;
-    margin-top: 80px;
-    margin-bottom: 80px;
     color: $color;
     font-weight: 600;
 }

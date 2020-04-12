@@ -5,7 +5,9 @@
 
     &__title {
         @include title(#fff);
+        margin-top: 80px;
         margin-left: 110px;
+        margin-bottom: 80px;
     }
     .btn {
         margin: 52px 0 80px 110px;

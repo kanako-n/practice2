@@ -3,6 +3,8 @@
     margin-bottom: 131px;
     &__title {
         @include title();
+        margin-top: 80px;
+        margin-bottom: 80px;
     }
 }
 .price-table {
