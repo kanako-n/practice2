@@ -130,6 +130,36 @@ select {
 }
 .contact-radio {
     padding-right: 60px;
+    input[type="radio"] {
+        display: none;
+    }
+    input[type="radio"]:checked  + &__label::after {
+        background: $blue;
+        border-radius: 50%;
+        content: '';
+        display: block;
+        height: 6px;
+        left: 4px;
+        position: absolute;
+        top: 11px;
+        width: 6px;
+    }
+    &__label {
+        padding-left: 12+15px;
+        position: relative;
+        &::before {
+            background: #fff;
+            border: solid 1px #3e3e3e;
+            border-radius: 50%;
+            content: '';
+            display: block;
+            height: 12px;
+            left: 0;
+            position: absolute;
+            top: 7px;
+            width: 12px;
+        }
+    }
 }
 textarea {
     outline: 0;
