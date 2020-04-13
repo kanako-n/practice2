@@ -32,3 +32,36 @@
         }
     }
 }
+//メディアクエリ-----------------------------
+@include media(m) {
+    .service {
+        height: 480px;
+        margin-bottom: 548px;
+        &__title {
+            @include title(#ffffff);
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: $title-subheading;
+        } 
+        &__box {
+            display: block;
+            width: 343/375*100%;
+            height: auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__category {
+            max-width: 311px;
+            margin: 0 auto;
+            margin-bottom: 65px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 18px;
+                padding: 24px 0;
+            }
+        }
+    }
+}
