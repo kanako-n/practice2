@@ -84,4 +84,20 @@
         display: none;
       }
   }
-
+//メディアクエリ--------------------------------
+@include media(m) {
+    .faqs {
+        position: relative;
+        padding-bottom: 10px;
+        &__title {
+            @include title();
+            font-size: $title-subheading;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }  
+    .faq-accordion {
+        margin: 0 auto 30px;
+        width: 343/375*100%;
+      }
+}
