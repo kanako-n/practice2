@@ -96,8 +96,13 @@
         }
     }  
     .faq-accordion {
-        margin: 0 auto 30px;
+        margin: 0 auto 40px auto;
         width: 343/375*100%;
-        
+
+        &__question {
+            &::after {
+                right: 7px;
+            }
+        }
       }
 }
