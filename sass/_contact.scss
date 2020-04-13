@@ -5,7 +5,7 @@
     padding-top: 80px;
     padding-bottom: 80.5px;
     &__box {
-        max-width: 960/1366*100%;
+        width: 960/1366*100%;
         margin: 0 auto;
     }
 }
@@ -40,14 +40,12 @@
 }
 .contact-item {
     margin-bottom: 40px;
-    content:"";
-    display: block;
-    clear: both;
+    display: flex;
     &__title {
-        width: 195px;
+        flex-shrink: 0;
         position: relative;
         margin-right: 80px;
-        float: left;
+        width: 195px;
     }
     &__must {
         background-color: $red;
@@ -64,6 +62,10 @@
     }
     &__gender {
         display: flex;
+        flex-wrap: wrap;
+    }
+    &__input-box {
+        width: 100%;
     }
     input[type="text"],
     input[type="email"] {
@@ -74,8 +76,7 @@
         outline: 0;
         padding-left: 10px;
         box-sizing: border-box;
-        width: 100%;
-	    max-width: 505px;
+	    width: 100%;
         &:hover, &:focus {
             border-bottom: 1px solid $blue;
             box-shadow: 0 1px 4px -4px $blue;
@@ -183,6 +184,7 @@ textarea {
 
 .contact-privacy {
     margin-bottom: 30px;
+    font-size: 18px;
     
     &__label {
         cursor: pointer;
@@ -223,4 +225,92 @@ textarea {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
       }
+}
+//メディアクエリ--------------------------------------------
+@include media(l) {
+    .contact {
+        &__box {
+            width: 343/375*100%;
+        }
+    }
+}
+
+@include media(m) {
+    .contact {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        &__box {
+            width: 343/375*100%;
+        }
+        &__btn {
+            text-align: center;
+        }
+    }
+    .contact-header {
+        &__title {
+            @include title(#ffffff);
+            font-size: $title-subheading;
+            margin-bottom: 10px;
+        }
+        &__text {
+            font-size: 14px;
+        }
+    }
+    .contact-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .contact-form {
+        width: 311/343*100%;
+    }
+    .contact-item {
+        margin-bottom: 40px;
+        display: block;
+
+        &__title {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        &__must {
+            margin-left: 20px;
+            font-size: 14px;
+            padding: 2px 11px;
+            position: static;
+        }
+        &--message {
+            margin-bottom: 20px;
+        }
+        input[type="text"],
+        input[type="email"] {
+            font-size: 16px;
+        }
+    .select {
+        flex: none;
+    }
+    .contact-item__select-box {
+        width: 100%;
+    }
+    .contact-radio {
+        padding-right: 90px;
+        font-size: 16px;
+        &__label {
+            &::before {
+                top: 3px;
+            }
+        }    
+    }
+    input[type="radio"]:checked  + .contact-radio__label::after {
+        top: 7px;
+    }
+    textarea {
+        height: 160px;  
+    }
+    
+    .contact-privacy {
+        margin-bottom: 21px;
+        font-size: 16px;
+        }
+    }
 }
