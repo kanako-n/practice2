@@ -61,5 +61,51 @@
     @include linkIcon($subcolor)    
 }
 
+//メディアクエリ---------------------------------
+@include media(m) {
+    .news {
+        &__box {
+            width: 343/375*100%;
+            padding: 0 15px;
+            margin: 0 auto; ///////
+        }
+    
+        &__title {
+            @include title();
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-size: $title-subheading;
+        }
+    
+        .btn-wrapper {
+            width: 311/343*100%;
+            margin: 0 auto;
+        }
+        .btn {
+            width: 100%;
+            padding: 20px 0;
+        }
+    }
+    
+    .news-list {
+        font-size: 14px;
+        margin: 0;
+    }
+    .news-item {
+        &__time {
+            padding-left: 16px;
+            padding-right: 20px;
+        }
+        &__category {
+            padding: 4px 20px;
+        }
+        &__text {
+            padding: 13px 47px 0 16px;
+        }
+
+        padding: 40px 0;
+        display: block; 
+    }
+}
 
 
