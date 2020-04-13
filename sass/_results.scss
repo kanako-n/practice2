@@ -42,9 +42,7 @@
   .results {
     margin-left: 0;
     padding-bottom: 40px;
-    .title-wrapper {
-      text-align: center;
-    }
+    text-align: center;
 
     &__title {
         @include title(#fff);
@@ -67,6 +65,7 @@
 .card {
     width: 277px;
     margin-right: 24px;
+    text-align: left;
     &__img-wrapper {
         overflow: hidden;
     }
@@ -171,6 +170,8 @@
   .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0;
+
+  
   }
   .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
     transform: scale(0.33);
