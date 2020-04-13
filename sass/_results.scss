@@ -1,6 +1,5 @@
 .results {
     background-color: $subcolor;
-    margin-top: 255px;
     margin-left: 93px;
 
     &__title {
@@ -38,6 +37,49 @@
         padding: 0 20px 20px;
     }
 }
+//メディアクエリ----------------------------------------
+@include media(m) {
+  .results {
+    margin-left: 0;
+    padding-bottom: 40px;
+    .title-wrapper {
+      text-align: center;
+    }
+
+    &__title {
+        @include title(#fff);
+        margin: 40px auto;
+        font-size: $title-subheading;
+    }
+    .btn-wrapper {
+      width: 343/375*100%;
+      margin: 0 auto;
+
+    }
+    .btn {
+      display: block;
+      text-align: center;
+      margin: 40px 0;
+      padding: 20px 0;
+    }
+}
+
+.card {
+    width: 277px;
+    margin-right: 24px;
+    &__img-wrapper {
+        overflow: hidden;
+    }
+    &__title {
+        font-size: 15px;
+        padding: 12px;
+    }
+    &__text {
+      font-size: 12px;
+        padding: 0 12px 12px;
+    }
+}
+}
 
 /* スワイパー
     -----------------------------------------------------*/
@@ -59,6 +101,9 @@
     list-style: none;
     padding: 0;
     margin-left: 110px;
+    @include media(m) {
+      margin-left: 16px;
+    }
     /* Fix of Webkit flickering */
     z-index: 1;
   }
@@ -104,7 +149,6 @@
   }
   
   .swiper-pagination {
-    // position: absolute;
     margin-top: 52px;
     color: #fff;
     transition: 300ms opacity;

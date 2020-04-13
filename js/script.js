@@ -1,23 +1,35 @@
 /*resultsスワイパー
   -------------------------------------------------*/
-new Swiper( '.swiper-container', {
-  speed: 400,
-  spaceBetween: 40,
-  width: 422,
-  loop: true,
-  loopedSlides: 6,
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 1.5,
-  //     spaceBetween: 24,
-  //   }
-  // }
-});
+  if (window.matchMedia( "(max-width: 768px)" ).matches) {
+    /* ウィンドウサイズが 768px以下の場合のコードをここに */
+    new Swiper( '.swiper-container', {
+            speed: 400,
+            spaceBetween: 24,
+            width: 277,
+            loop: true,
+            loopedSlides: 6,
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              clickable: true,
+          }
+      })
+    } else {
+    /* ウィンドウサイズが 768px以上の場合のコードをここに */
+    new Swiper( '.swiper-container', {
+    speed: 400,
+    spaceBetween: 40,
+    width: 422,
+    loop: true,
+    loopedSlides: 6,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+    }
+    });
+    }
+
 
 /* FAQのアコーディオン
   ------------------------------------------------*/
