@@ -3,7 +3,7 @@
     padding-top: 120px;
     padding-bottom: 120px;
     &__inner {
-        max-width: 1180px;
+        width: 1180/1366*100%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -34,5 +34,42 @@
     &__copy {
         color: #FFFFFF;
         font-size: 12px;
+    }
+    @include media(m) {
+        &__inner {
+            width: 343/375*100%;
+            margin: 0 auto;
+            display: block;
+        }
+        &__logo {
+            margin: 0 auto;
+            width: 204px;
+            display: flex;
+            justify-content: space-between;
+            .fab {
+                margin-bottom: 40px;
+            }
+        }
+        &__list {
+            &__items {
+                width: 350px;
+                margin: 0 auto 35px;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            &__item {
+                margin-bottom: 20px;
+                &:first-child {
+                    padding-right: 68px;
+                }
+            }
+        }
+        &__right {
+            text-align: center;
+        }
+        &__heading {
+            font-size: 34.4px;
+        }
     }
 }
