@@ -12,14 +12,26 @@
 <body>
     <div class="main">
         <header class="header">
+            <!-- <div id="mobile-head">
+                <h1 class="logo">
+                    <img src="./assets/img/logo.png" srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x" alt="HANIWAMAN Corp.">
+                </h1>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div> -->
             <ul class="header-nav">
-                <li class="header-nav__item"><a href="#">News</a></li>
-                <li class="header-nav__item"><a href="#">Service</a></li>
-                <li class="header-nav__item"><a href="#">Results</a></li>
-                <li class="header-nav__item"><a href="#">Price</a></li>
-                <li class="header-nav__item"><a href="#">Comments</a></li>
-                <li class="header-nav__item"><a href="#">Comments</a></li>
-                <li class="header-nav__item"><a href="#">Contact</a></li>
+                <li class="header-nav__item"><a href="#news">News</a></li>
+                <li class="header-nav__item"><a href="#service">Service</a></li>
+                <li class="header-nav__item"><a href="#results">Results</a></li>
+                <li class="header-nav__item"><a href="#price">Price</a></li>
+                <li class="header-nav__item"><a href="#coments">Comments</a></li>
+                <li class="header-nav__item"><a href="#faqs">FAQs</a></li>
+                <li class="header-nav__item"><a href="#contact">Contact</a></li>
             </ul>
         </header>
         <section class="top">
@@ -35,7 +47,7 @@
         </section>
     </div>
     <!-- /.main -->
-    <section class="news">
+    <section id="news" class="news">
         <div class="news__box">
             <h2 class="news__title">News</h2>
             <ul class="news-list">
@@ -62,7 +74,7 @@
         </div>
         <!-- /.news__inner -->
     </section>
-    <section class="service">
+    <section id="service" class="service">
         <h2 class="service__title">Service</h2>
         <div class="service__box">
             <div class="service__category">
@@ -83,7 +95,7 @@
         </div>
         <!-- /.service__box -->
     </section>
-    <section class="results">
+    <section id="results" class="results">
         <h2 class="results__title">Results</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -163,7 +175,7 @@
         </div>
         <!-- /.btn-wrapper -->
     </section>
-    <section class="price">
+    <section id="price" class="price">
         <h2 class="price__title">Price</h2>
         <table class="price-table">
             <tbody class="price-table__body">
@@ -184,7 +196,7 @@
         <p class="price-table__note">※ 上記料金はサンプルです。</p>
     </section>
     <div class="coments-wrapper">
-        <section class="coments">
+        <section id="coments" class="coments">
             <h2 class="coments__title">Coments</h2>
             <div class="coment">
                 <img src="./img/comments1.png" alt="女性" class="coment__img">
@@ -200,7 +212,7 @@
         <img src="./img/comments3.png" alt="コメントのイメージ写真" class="coments-wrapper__img">
     </div>
     <!-- /.coments-wrapper -->
-    <section class="faqs">
+    <section id="faqs" class="faqs">
         <h2 class="faqs__title">Q&A</h2>
         <dl class="faq-accordion">
             <div class="js-faq">
@@ -299,7 +311,7 @@
             <!-- /.js-faq -->
         </dl>
     </section>
-    <section class="access">
+    <section id="access" class="access">
         <div class="access__inner">
             <div class="access__info">
                 <h2 class="access__title">Access</h2>
@@ -312,7 +324,7 @@
         </div>
         <!-- /.access__inner -->
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="contact__box">
             <div class="contact-header">
                 <h2 class="contact-header__title">Contact Us</h2>
