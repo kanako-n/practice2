@@ -1,33 +1,28 @@
-//メイン画像（header含む）-----------------------------------------
-.main {
+.top {
     background-image: url('../img/mv.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 648px;
-    position: relative;
-}
-//トップ----------------------------------------------------------
-.top__title {
-    width: 524px;
-    position: absolute;
-    top: 220px;
-    right: 109px;
+    &__title {
+        width: 524px;
+        padding-top: 220px;
+        margin: 0 109px 0 auto;
 
-    h2 {
-        font-size: 30px;
-        font-weight: bold;
-        margin-bottom: 40px;
-    }
-    p {
-        font-size: 18px;
-        margin-bottom: 40px;
+        h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
     }
 }
 //メディアクエリ-----------------------------------------
 @include media(m) {
     .top__title {
         width: 336/375*100%;
-        position: static;
         padding-top: 206px;
         margin: 0 auto;
     

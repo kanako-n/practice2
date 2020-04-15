@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <div class="main">
-        <header class="header">
+    <header id="top-head">
+        <div class="inner">
             <div id="mobile-head">
+                <h1 class="logo">
+                    <img src="./img/logo.png" alt="HANIWAMAN Corp.">
+                </h1>
+                <div id="nav-toggle">
+                    <div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav id="global-nav">
+                <ul>
+                    <li class="header-nav__item"><a href="#news">News</a></li>
+                    <li class="header-nav__item"><a href="#service">Service</a></li>
+                    <li class="header-nav__item"><a href="#results">Results</a></li>
+                    <li class="header-nav__item"><a href="#price">Price</a></li>
+                    <li class="header-nav__item"><a href="#coments">Comments</a></li>
+                    <li class="header-nav__item"><a href="#faqs">FAQs</a></li>
+                    <li class="header-nav__item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- <div class="mobile-head">
                 <h1 class="logo">
                     <img src="./img/logo.png" alt="HANIWAMAN Corp.">
                 </h1>
@@ -32,40 +59,40 @@
                 <li class="header-nav__item"><a href="#coments">Comments</a></li>
                 <li class="header-nav__item"><a href="#faqs">FAQs</a></li>
                 <li class="header-nav__item"><a href="#contact">Contact</a></li>
-            </ul>
-        </header>
-        <section class="top">
-            <div class="top__title">
-                <h2 class="big-heading">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h2>
-                <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-                <div class="btn-wrapper">
-                    <a href="#" class="CV-btn">お問い合わせしてみる</a>
-                </div>
-                <!-- /.btn-wrapper -->
+            </ul> -->
+    <!-- </header> -->
+    <section class="top">
+        <div class="top__title">
+            <h2 class="big-heading">詩が生れて、画が出来る。<br> とかくに人の世は住みにくい。</h2>
+            <p>どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+            <div class="btn-wrapper">
+                <a href="#" class="CV-btn">お問い合わせしてみる</a>
             </div>
-            <!-- /.top__title -->
-        </section>
-    </div>
+            <!-- /.btn-wrapper -->
+        </div>
+        <!-- /.top__title -->
+    </section>
+    <!-- </div> -->
     <!-- /.main -->
     <section id="news" class="news">
         <div class="news__box">
             <h2 class="news__title">News</h2>
             <ul class="news-list">
                 <li><a href="#" class="news-item">
-                    <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
-                    <span class="news-item__category">テキスト</span>
-                    <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
-                </a></li>
+                        <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
+                        <span class="news-item__category">テキスト</span>
+                        <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+                    </a></li>
                 <li><a href="#" class="news-item">
-                    <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
-                    <span class="news-item__category">テキスト</span>
-                    <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュース</p>
-                </a></li>
+                        <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
+                        <span class="news-item__category">テキスト</span>
+                        <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュース</p>
+                    </a></li>
                 <li><a href="#" class="news-item">
-                    <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
-                    <span class="news-item__category">テキスト</span>
-                    <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュース</p>
-                </a></li>
+                        <time class="news-item__time" datetime="2019-02-01">2019-02-01</time>
+                        <span class="news-item__category">テキスト</span>
+                        <p class="news-item__text">ニュースニュースニュースニュースニュースニュースニュース</p>
+                    </a></li>
             </ul>
             <div class="btn-wrapper">
                 <a href="#" class="btn btn--bright">MORE</a>
@@ -200,14 +227,16 @@
             <h2 class="coments__title">Coments</h2>
             <div class="coment">
                 <img src="./img/comments1.png" alt="女性" class="coment__img">
-                <p class="coment__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                <p class="coment__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
             </div>
             <!-- /.coment -->
             <div class="coment">
                 <img src="./img/comments2.png" alt="男性" class="coment__img">
-                <p class="coment__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
+                <p class="coment__text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
             </div>
-            <!-- /.coment -->    
+            <!-- /.coment -->
         </section>
         <img src="./img/comments3.png" alt="コメントのイメージ写真" class="coments-wrapper__img">
     </div>
@@ -319,7 +348,9 @@
                 <a href="#" class="btn btn--dark btn-pc">Google Maps</a>
             </div>
             <!-- /.access__info -->
-            <iframe class="access__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808797!2d139.7649361149815!3d35.681236180194304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1583495214659!5m2!1sja!2sjp" width="720" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe class="access__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808797!2d139.7649361149815!3d35.681236180194304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1583495214659!5m2!1sja!2sjp"
+                width="720" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             <a href="#" class="btn btn--dark btn-sp">Google Maps</a>
         </div>
         <!-- /.access__inner -->
@@ -335,57 +366,57 @@
                 <form action="e.php" method="post" name="contact-form" class="contact-form">
                     <dl class="contact-list">
                         <div class="contact-item select">
-                          <dt class="contact-item__title">お問い合わせ種別</dt>
-                          <dd class="contact-item__select-box">
-                            <select name="form-select" id="form-select">
-                              <option value="-" selected>選択して下さい</option>
-                              <option value="A">A</option>
-                              <option value="B">B</option>
-                            </select>
-                          </dd>
+                            <dt class="contact-item__title">お問い合わせ種別</dt>
+                            <dd class="contact-item__select-box">
+                                <select name="form-select" id="form-select">
+                                    <option value="-" selected>選択して下さい</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                </select>
+                            </dd>
                         </div>
                         <div class="contact-item">
-                          <dt class="contact-item__title">氏名<span class="contact-item__must">必須</span></dt>
-                          <dd class="contact-item__input-box">
-                            <input type="text" name="name" placeholder="氏名">
-                          </dd>
+                            <dt class="contact-item__title">氏名<span class="contact-item__must">必須</span></dt>
+                            <dd class="contact-item__input-box">
+                                <input type="text" name="name" placeholder="氏名">
+                            </dd>
                         </div>
                         <div class="contact-item">
-                          <dt class="contact-item__title">フリガナ<span class="contact-item__must">必須</span></dt>
-                          <dd class="contact-item__input-box">
-                            <input type="text" name="kana" placeholder="フリガナ">
-                          </dd>
+                            <dt class="contact-item__title">フリガナ<span class="contact-item__must">必須</span></dt>
+                            <dd class="contact-item__input-box">
+                                <input type="text" name="kana" placeholder="フリガナ">
+                            </dd>
                         </div>
                         <div class="contact-item">
-                          <dt class="contact-item__title">メールアドレス</dt>
-                          <dd class="contact-item__input-box">
-                            <input type="email" name="email" id="form-email" placeholder="sample@gmail.com">
-                          </dd>
+                            <dt class="contact-item__title">メールアドレス</dt>
+                            <dd class="contact-item__input-box">
+                                <input type="email" name="email" id="form-email" placeholder="sample@gmail.com">
+                            </dd>
                         </div>
-                    <div class="contact-item">
-                        <dt class="contact-item__title">性別</dt>
-                        <dd class="contact-item__gender">
-                            <div class="contact-radio">
-                            <input type="radio" value="male" name="sex" id="radio-male">
-                            <label for="radio-male" class="contact-radio__label">男性</label>
-                            </div>
-                            <div class="contact-radio">
-                            <input type="radio" value="female" name="sex" id="radio-female">
-                            <label for="radio-female" class="contact-radio__label">女性</label>
-                            </div>
-                        </dd>
-                    </div>
-                    <div class="contact-item--message">
-                        <dt class="contact-item__title">メッセージ</dt>
-                        <dd>
-                            <textarea name="message"></textarea>
-                        </dd>
-                    </div>
+                        <div class="contact-item">
+                            <dt class="contact-item__title">性別</dt>
+                            <dd class="contact-item__gender">
+                                <div class="contact-radio">
+                                    <input type="radio" value="male" name="sex" id="radio-male">
+                                    <label for="radio-male" class="contact-radio__label">男性</label>
+                                </div>
+                                <div class="contact-radio">
+                                    <input type="radio" value="female" name="sex" id="radio-female">
+                                    <label for="radio-female" class="contact-radio__label">女性</label>
+                                </div>
+                            </dd>
+                        </div>
+                        <div class="contact-item--message">
+                            <dt class="contact-item__title">メッセージ</dt>
+                            <dd>
+                                <textarea name="message"></textarea>
+                            </dd>
+                        </div>
                     </dl>
                     <div class="contact-privacy">
                         <input type="checkbox" name="privacy" id="form-privacy">
                         <label for="form-privacy" class="contact-privacy__label">
-                          個人情報保護方針に同意する
+                            個人情報保護方針に同意する
                         </label>
                     </div>
                     <div class="contact__btn">
@@ -430,4 +461,5 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/script.js"></script>
 </body>
+
 </html>
